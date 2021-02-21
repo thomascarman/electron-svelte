@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm-run-all -s build:*",
+    "build:rollup": "rollup -c",
+    "build:css": "node-sass --include-path sass src/style/main.sass public/build/global.css",
+    "dev": "npm-run-all -p dev:*",
+    "dev:rollup": "rollup -c -w",
+    "dev:css": "nodemon -e sass -x \"npm run build:css\"",
+    "start": "sirv public",
+    "validate": "svelte-check"
   },
   "repository": {
     "type": "git",
