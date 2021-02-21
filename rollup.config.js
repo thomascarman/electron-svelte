@@ -1,7 +1,6 @@
 import svelte from "rollup-plugin-svelte";
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
-// import livereload from "rollup-plugin-livereload";
 import dev from "rollup-plugin-dev";
 import { terser } from "rollup-plugin-terser";
 import sveltePreprocess from "svelte-preprocess";
@@ -72,7 +71,7 @@ export default {
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
-    // !production && serve(),
+    !production && serve(),
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
