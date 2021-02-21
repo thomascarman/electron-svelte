@@ -18,8 +18,11 @@
     "url": "git+https://github.com/thomascarman/budget.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Thomas Carman",
+    "email": "thomascarman@users.noreply.github.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/thomascarman/budget/issues"
   },
