@@ -1,6 +1,9 @@
 # Build Files
 public/build/
 
+# Electron
+out/
+
 # VisualStudioCode
 .vscode/*
 !.vscode/settings.json
